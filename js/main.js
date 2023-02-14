@@ -1,17 +1,21 @@
 
+/*Recupera o botão da página html */
+let btn = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+
+/* Quando o usuário rola 20px para baixo na parte superior do documento
+chama a função para mostrar o botão */
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.querySelector("#myBtn").style.display = "block";
+        btn.style.display = "block";
     } else {
-        document.querySelector("#myBtn").style.display = "none";
+        btn.style.display = "none";
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+/* Quando o usuário clicar no botão chama a função para voltar ao topo da página */
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
