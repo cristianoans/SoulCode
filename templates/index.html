@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
+
 <body>
+    <button onclick="topFunction()" id="btnTopo" title="Voltar ao Topo">
+        Top
+    </button>
 
-<button onclick="topFunction()" id="myBtn" title="Voltar ao Topo">Top</button>
+    <section id="cabeçalho" class="cabeçalho">
+        <div id="menu">
+            <ul id="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Fale conosco</a></li>
+            </ul>
+        </div>
+    </section>
 
-<section id="cabeçalho" class="cabeçalho">
-    <div id="menu">
-        <ul id="links" >
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#contato">Fale conosco</a></li>
-        </ul>
-    </div>
-</section>
+    <section id="home" class="sessões">
+        <div>
+            <h1>Seja bem vindo ao Viveiro Flora Senador</h1>
+            <p>Aqui você encontra as melhoras plantas para decorar o seu jardim.</p>
+        </div>
+    </section>
 
-<section id="home" class="sessões">
-    <div class="divDev">
-        <h1>Seja bem vindo ao Viveiro Flora Senador</h1>
-        <p>Aqui você encontra as melhoras plantas para decorar o seu jardim.</p>
-    </div>
-</section>
+    <section id="sobre" class="sessões">
+        <p>Sobre Nós</p>
+    </section>
 
-<section id="sobre" class="sessões">
-<p>Sobre Nós</p>
-</section>
+    <section id="produtos" class="sessões">
+        <p>Nossos Produtos</p>
+    </section>
 
-<section id="produtos" class="sessões">
-<p>Nossos Produtos</p>
-</section>
+    <section id="contato" class="sessões">
+        
+        <div class="box">
+            <div class="one">
+                Contato
+            </div>
+            <div class="one inputForm">
+                <form id="form1" name="form1" method="#">
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <label for="nomeCompleto">Nome Completo:</label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" /><br>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" /><br>
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="enail" name="email" /><br>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" cols="30" rows="5"></textarea>
+                        <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar!" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </section>
 
-<section id="contato" class="sessões">
-<p>Entre em contato</p>
-</section>
-
-
-<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
+
 </html>

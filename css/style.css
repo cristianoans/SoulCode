@@ -20,7 +20,7 @@ body {
     background-color: #fff;
 }
 
-#myBtn {
+#btnTopo {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -36,14 +36,36 @@ body {
     border-radius: 4px;
 }
 
-#myBtn:hover {
+#btnTopo:hover {
     background-color: rgb(147, 190, 136);
 }
 
 .sessões {
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     width: 80%;
     height: 400px;
     margin: auto;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
+
+div {
+    border: 1px solid #000;
+}
+
+.box {
+    display: flex;
+    padding: 10px;
+  }
+
+  .one {
+    flex: 1;
+  }
+
+  .two {
+    flex: 2;
+  }
+
+.inputForm {
+    align-items: end;
+}
+
