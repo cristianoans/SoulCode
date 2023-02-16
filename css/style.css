@@ -16,7 +16,7 @@ li {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     background-color: #fff;
 }
 
@@ -49,12 +49,11 @@ body {
 }
 
 div {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .box {
     display: flex;
-    padding: 10px;
   }
 
   .one {
@@ -65,7 +64,41 @@ div {
     flex: 2;
   }
 
-.inputForm {
-    align-items: end;
+.labelForm {
+    width: 25%;
+    display: inline-block;
 }
 
+.inputForm {
+    width: 70%;
+}
+
+.FormTextArea {
+    display: block;
+    width: 97%;
+}
+
+.icon{
+    width: 16px;
+    height: 16px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #00000087;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: #000000;
+  }
