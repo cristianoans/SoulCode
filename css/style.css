@@ -1,25 +1,32 @@
-.cabeçalho {
-  border: 1px solid #000000;
-  width: 80%;
-  height: auto;
-  margin: auto;
-}
-
-li {
-  display: inline;
-  font-size: 25px;
-  font-weight: 600;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding: 5px;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #fff;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: #5D7C43;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #5D7C43;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #a6bb95;
+}
+
+
+/* estilização do botão de voltar ao topo */
 #btnTopo {
   display: none;
   position: fixed;
@@ -29,7 +36,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: rgb(124, 172, 112);
+  background-color: #98A78A;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -37,21 +44,52 @@ body {
 }
 
 #btnTopo:hover {
-  background-color: rgb(147, 190, 136);
+  background-color: #98A78A;
 }
 
-.sessões {
-  /* border: 1px solid #000000; */
-  width: 80%;
-  height: 800px;
+/* estilização do header */
+header {
+  display: flex;
+  align-items: flex-start;
   margin: auto;
-  /* background-color: aliceblue; */
+  width: 850px;
+  height: 70px;
+  background-color: rgba(188, 203, 188, 0.226);
 }
 
-div {
-  /* border: 1px solid #000; */
+header ul li {
+  display: inline;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #5D7C43;
+  border-radius: 5px;
 }
 
+header img {
+  width: 100px;
+  height: 60px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  width: 70px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  align-self: center
+}
+
+/* estilização para montar o layout do contato lado a lado com o form */
 .box {
   display: flex;
 }
@@ -83,55 +121,90 @@ div {
   height: 16px;
 }
 
-a:link {
-  text-decoration: none;
-  color: #000000;
+fieldset {
+  border: 0px;
 }
 
-a:visited {
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #00000087;
-}
-
-a:active {
-  text-decoration: none;
-  color: #000000;
-}
-
-
+/* estilização dos cards de produtos */
 .card {
-  width: 200px;
+  width: 30%;
   font-size: 12px;
   text-align: justify;
   margin: 5px;
 }
 
 .card img {
-  width: 200px;
+  width: 100%;
   height: 125px;
 }
 
-.titleCard{
+.titleCard {
   height: 15px;
   margin: 0px 5px 0px 5px;
 }
 
-.descCard{
-  height: 120px;
+.descCard {
+  height: 140px;
   margin: 0px 5px 0px 5px;
 }
 
-.priceCard{
+.priceCard {
   height: 15px;
   margin: 0px 5px 0px 5px;
 }
 
-.buttomCard{
+.buttomCard {
   height: 15px;
   margin: 5px;
+}
+
+/* estilização das sections */
+#home img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.sessões {
+  background-color: rgba(188, 203, 188, 0.226);
+  width: 850px;
+  height: 500px;
+  margin: auto;
+}
+
+#produtos {
+  background-color: #fff;
+}
+
+#contato {
+  background-color: #fff;
+}
+
+#contato form {
+  background-color: rgba(188, 203, 188, 0.226);
+}
+
+.divBody {
+  align-self: center
+}
+
+/* estilização do footer */
+footer {
+  background-color: rgba(188, 203, 188, 0.226);
+  margin: auto;
+  width: 850px;
+  height: 120px;
+}
+
+.midiaSocial img {
+  width: 25px;
+}
+
+.midiaSocial ul li {
+  display: inline;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.copy {
+  text-align: center;
 }
